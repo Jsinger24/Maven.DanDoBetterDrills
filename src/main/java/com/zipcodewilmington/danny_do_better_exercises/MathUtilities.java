@@ -60,8 +60,7 @@ public class MathUtilities {
      * @return sum of `baseValue` and `difference`
      */
     public Double add(double baseValue, double difference) {
-        return (double) (baseValue + difference);
-
+return baseValue + difference;
 
     }
 
@@ -226,7 +225,7 @@ public class MathUtilities {
      * @return product of `multiplicand` by `multiplier`
      */
     public Float multiply(float multiplicand, float multiplier) {
-        return (float) (multiplicand * multiplier);
+        return  (multiplicand * multiplier);
     }
 
     /**

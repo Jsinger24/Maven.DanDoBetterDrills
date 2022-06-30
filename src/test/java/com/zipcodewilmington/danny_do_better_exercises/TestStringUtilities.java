@@ -122,7 +122,7 @@ public class TestStringUtilities {
     @Test
     public void getTheMiddleCharOfZipcoder(){
         // : Given
-        String input = "Zipcoder";
+        String input = "Zipfcoder";
         Character expected = 'c';
 
         // : When

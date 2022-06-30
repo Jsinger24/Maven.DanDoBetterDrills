@@ -38,11 +38,10 @@ public class StringUtilities {
      * @return the first 3 characters of `input`
      */
     public static String getPrefix(String input) {
-        String[] newStr = input.split(" ");
-        String firstThree = newStr.toString();
-        System.out.println(firstThree);
-        return firstThree;
+        return input.substring(0,3);
+
     }
+
 
 
     /**
@@ -50,7 +49,9 @@ public class StringUtilities {
      * @return the last 3 characters of `input`
      */
     public static String getSuffix(String input) {
-        return null;
+        String lastThree = input.substring(input.length() - 3);
+
+        return lastThree;
     }
 
     /**
@@ -68,18 +69,8 @@ public class StringUtilities {
      * @return the middle character of `inputValue`
      */
     public static Character getMiddleCharacter(String inputValue) {
-            int length = inputValue.length();
-            int mid = length / 2;
-            return inputValue.charAt(mid);
-//        String[] newStr = inputValue.split(" ");
-//        String mid = "";
-//        for (int i = 0; i <= newStr.length; i++){
-////            mid = newStr[i / 2].toString();
-//              mid = newStr.length() / 2;
-//        }
-//        return mid[];
-//
-
+        double thisNum = Math.floor(inputValue.length() / 2);
+        return inputValue.charAt((int) thisNum);
 
     }
 
@@ -117,12 +108,13 @@ public class StringUtilities {
      * @return an identical string with characters in reverse order.
      */
     public static String reverse(String stringToReverse) {
-        String[] newStr = stringToReverse.split(" ");
-        String result = "";
-        for (int i = stringToReverse.length() - 1; i <= 0; i--){
-                result += stringToReverse.toString();
+        String results = "";
+
+        for (int i = stringToReverse.length() - 1; i >= 0; i--) {
+            results = results + stringToReverse.charAt(i);
+
         }
-        return result;
+        return results;
     }
 
 
